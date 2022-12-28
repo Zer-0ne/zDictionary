@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,300&display=swap');
+
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Pacifico', cursive;
+    /* color: #4DB33D; */
+    color: red;
+    padding: 1.5em;
+}
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+h4 {
+    color: #4DB33D;
+}
+
+input {
+    width: 400px;
+    height: 38px;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px;
+    border-radius: .5rem;
+    background-color: var(--nav-background);
+}
+
+.searchBox {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+}
+
+.searchBox button {
+    /* background-color: #4DB33D; */
+    background-color: black;
+    height: 38px;
+    border-radius: .5rem;
+    margin: 0 0 0 10px;
+    width: 60px;
+    border: .5px solid rgb(214, 51, 51);
+    color: red;
+    box-shadow: 0px 0px 5px ;
+    cursor: pointer;
+    padding: 0;
+}
+
+.showResults {
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.showResults>h2>button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 520px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .showResults,.searchBox{width: 90%;}
+    input{
+        width: 85%;
+    }
+    .searchBox button{
+        width: 15%;
+    }
+}
